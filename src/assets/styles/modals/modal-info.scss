@@ -1,0 +1,38 @@
+@import "@/assets/styles/fonts-variables.scss";
+.m-info {
+  &__header {
+
+  }
+
+  &__body {
+    margin: 20px 0;
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 200px;
+      &-title {
+        font-family: $bold;
+        text-transform: uppercase;
+        font-size: 1rem;
+      }
+
+      &-value {
+        text-align: left;
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .m-info {
+    width: 400px !important;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .m-info {
+    width: 300px !important;
+  }
+}
